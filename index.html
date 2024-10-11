@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Up!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="imagens/logo2.png" alt="Logo da Loja">
+        </a>
+        <nav class="nav-links">
+            <a href="#comunidade"><b>Comunidade</b></a>
+            <a href="#novidades">Novidades</a>
+            <a href="#bazar">Midas Bazar</a>
+            <a href="#guia">Guia de Medidas</a>
+            <a href="indexSobre.html">Sobre Nós</a>
+        </nav>
+        <div class="user-options">
+            <a href="#buscar">Buscar</a>
+            <a href="#login">Login</a>
+            <a href="#carrinho">Carrinho</a>
+        </div>
+    </header>
+
+    <!-- Carrossel de Banner -->
+    <section class="banner-carousel">
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" onclick="prevBanner()">←</button>
+            <div class="carousel-slides" id="banner-slides">
+                <img src="imagens/carousel/banners/teste.webp" alt="Banner 1">
+                <img src="imagens/carousel/banners/imagem2.png" alt="Banner 2">
+                <img src="imagens/carousel/banners/imagem3.png" alt="Banner 3">
+                <!-- Adicione mais banners conforme necessário -->
+            </div>
+            <button class="carousel-btn next" onclick="nextBanner()">→</button>
+        </div>
+    </section>
+
+   <!-- Carrossel de Produtos -->
+<section class="product-carousel" id="product-carousel">
+    <h2>Destaques</h2>
+    <div class="carousel-wrapper">
+        <div class="carousel-slides" id="product-slides">
+            <div class="product-row">
+                <div class="product-item">
+                    <img src="imagens/carousel/camisas/azul.webp" alt="Gin OW T-shirt">
+                    <h3>Gin OW T-shirt</h3>
+                    <p>R$199,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+                <div class="product-item">
+                    <img src="imagens/carousel/camisas/bege.webp" alt="Boxy Navy">
+                    <h3>Boxy Navy</h3>
+                    <p>R$219,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+                <div class="product-item">
+                    <img src="imagens/carousel/camisas/preta.webp" alt="Cup T-shirt">
+                    <h3>Cup T-shirt</h3>
+                    <p>R$199,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+                <div class="product-item">
+                    <img src="imagens/carousel/camisas/verde.webp" alt="Gin B T-shirt">
+                    <h3>Gin B T-shirt</h3>
+                    <p>R$199,90</p>
+                    <a href="#" class="buy-btn">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Coloque as setas do carrossel de produtos aqui -->
+    <div class="carousel-controls">
+        <button class="carousel-btn prev" onclick="prevProduct()">←</button>
+        <button class="carousel-btn next" onclick="nextProduct()">→</button>
+    </div>
+</section>
+
+    <script src="scripts.js"></script> <!-- Link para o seu arquivo JavaScript -->
+</body>
+</html>
